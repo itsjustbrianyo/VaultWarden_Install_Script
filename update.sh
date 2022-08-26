@@ -1,10 +1,10 @@
 ####     Thanks to wh1te909 who I stole (or got inspiration) alot of this script from (first script I have ever written) 
 ####     and https://pieterhollander.nl/post/bitwarden/ which I followed the steps and converted them to a script
 
-#check if running on ubuntu 20.04
+#check if running on ubuntu 22.04
 UBU22=$(grep 22.04 "/etc/"*"release")
 if ! [[ $UBU22 ]]; then
-  echo -ne "\033[0;31mThis script will only work on Ubuntu 20.04\e[0m\n"
+  echo -ne "\033[0;31mThis script will only work on Ubuntu 22.04\e[0m\n"
   exit 1
 fi
 
