@@ -18,13 +18,13 @@ If you have issues, please reach out here instead of submitting a support reques
 - Ports 80 and 443 opened on your firewall
 
 ## HTTPS Required
-Note: HTTPS is required to use VaultWarden. This script removed automatic NGINX/LetsEncrypt setup as I have an NGINX proxy in place already. You'll need to ensure one is setup prior to beginning the installation and will be on your own for setup. 
+Note: HTTPS is required to use VaultWarden. This script removed automatic NGINX/LetsEncrypt setup as I have a NGINX proxy in place already. You'll need to ensure one is setup prior to beginning the installation and you will be on your own for setup. 
 
 https://inepttech.com/nginx-reverse-proxy-with-ssl/
 
 ## Installation
 
-Install.sh will install the newest version of vaultwarden.
+Install.sh will install the newest version of VaultWarden.
 
 
 ```bash
@@ -36,7 +36,7 @@ $ su vaultwarden
 # Change Directory to vaultwarden home 
 $ cd ~/
 # Download the install script from github 
-$ wget https://raw.githubusercontent.com/dinger1986/bitwardenrs_install_script/master/install.sh
+$ wget https://raw.githubusercontent.com/itsjustbrianyo/Vaultwarden_Install_Script/master/install.sh
 # Set Script as executable 
 $ chmod +x install.sh
 # Run script 
@@ -45,13 +45,13 @@ $ ./install.sh
 
 Fill in info as requested as the script runs.
 
-Once complete go to https://yourdomain/admin
+Once complete go to https://vault.yourdomain.com/admin
 
 ## Update
 
 ```bash
 # Download the update script from github 
-$ wget https://raw.githubusercontent.com/dinger1986/bitwardenrs_install_script/master/update.sh
+$ wget https://raw.githubusercontent.com/itsjustbrianyo/Vaultwarden_Install_Script/master/update.sh
 # Set Script as executable 
 $ chmod +x update.sh
 # Run script $ ./update.sh
