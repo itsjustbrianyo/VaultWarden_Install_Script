@@ -1,24 +1,24 @@
-Vaultwarden/BitwardenRS_install_script. 
+Vaultwarden_Install_Script. 
 -----
+Script used to download, extract, and install VaultWarden on Ubuntu 22.04 without the use of Docker. The script is forked from https://github.com/dinger1986/bitwardenrs_install_script which uses https://github.com/dani-garcia/vaultwarden binaries. This script also removes the installation of NGINX and Fail2Ban and adds a cron job to reboot the server monthly.
 
-Install Script for Vaultwarden for Ubuntu 22.04 using https://github.com/dani-garcia/vaultwarden
-
-Please note this is an unofficial install script and support requests for the install should come here not to https://github.com/dani-garcia/vaultwarden
-
-This installs BitWarden_RS on Ubuntu 22.04 with SQLite, configures firewall and enables fail2ban.
-
-You can use Hetzner to test this with a $20 credit using this referal code https://hetzner.cloud/?ref=p6iUr7jEXmoB
+If you have issues, please reach out here instead of submitting a support requests to either dinger1986 or dani-garcia
 
 ## Hardware Requirements 
 
-- 2GB RAM (perhaps overspec'd for running BitWarden_RS but much less compile will crash)
+- 2GB RAM
 
 ## Prerequisites 
 
 - Ubuntu 22.04 
 - Create non root user
-- DNS record created on domain (you can get free domains from freenom.com) pointed to your external IP 
-- Ports 80, 443 and 22 opened on your firewall and pointed to the deployment machine.
+- DNS record pointing to your external IP 
+- Ports 80 and 443 opened on your firewall
+
+## HTTPS Required
+Note: HTTPS is required to use VaultWarden. This script removed automatic NGINX/LetsEncrypt setup as I have an NGINX proxy in place already. You'll need to ensure one is setup prior to beginning the installation and will be on your own for setup. 
+
+https://inepttech.com/nginx-reverse-proxy-with-ssl/
 
 ## Installation
 
