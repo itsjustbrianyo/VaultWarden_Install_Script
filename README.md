@@ -1,6 +1,8 @@
 Vaultwarden_Install_Script. 
 -----
-Script used to download, extract, and install VaultWarden on Ubuntu 22.04 without the use of Docker. The script is forked from https://github.com/dinger1986/bitwardenrs_install_script which uses https://github.com/dani-garcia/vaultwarden binaries. This script also removes the installation of NGINX and Fail2Ban and adds a cron job to reboot the server monthly.
+Script used to download, extract, and install VaultWarden on Ubuntu 22.04 without the use of Docker. The script is forked from https://github.com/dinger1986/bitwardenrs_install_script which uses https://github.com/dani-garcia/vaultwarden binaries. 
+
+This script also removes the installation of NGINX and Fail2Ban and adds a cron job to reboot the server monthly.
 
 If you have issues, please reach out here instead of submitting a support requests to either dinger1986 or dani-garcia
 
